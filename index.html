@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sashank Vinnakota · Embedded systems</title>
+<meta name="description" content="Sashank Vinnakota, electrical engineering student. Embedded systems and hardware, with photographs from the bench and five projects you can open and try in the browser.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sashank Vinnakota · Embedded systems">
+<meta property="og:description" content="Photographs from the bench, and five embedded projects you can open and try in the browser.">
+<meta property="og:image" content="img/full/testboard-green-led.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+<div id="home">
+
+  <header class="top">
+    <a class="mark" href="#" id="brand"><span>SV</span>Sashank Vinnakota</a>
+    <nav>
+      <a href="#about" data-to="about">About</a>
+      <a href="#work" data-to="work">Work</a>
+      <a href="#bench" data-to="bench">Bench</a>
+      <a href="https://github.com/sashankvinnakota-jpg" target="_blank" rel="noopener">GitHub&nbsp;↗</a>
+    </nav>
+  </header>
+
+  <section class="shot">
+    <img class="shot-img" src="img/full/testboard-green-led.jpg" alt="Hands holding oscilloscope probes on a power board, its good-voltage LED lit green" fetchpriority="high">
+    <div class="shot-text">
+      <div class="kicker">Electrical engineering · Embedded systems</div>
+      <h1>Sashank<br>Vinnakota</h1>
+      <p>I write code and watch it move real hardware. These are projects I've worked on, rebuilt as simulations you can open and try, and photographs from the bench where the actual work happened.</p>
+      <a class="cta" href="#about" data-to="about">Read on <b>↓</b></a>
+    </div>
+    <div class="shot-note">Probing the regulator input · rails good</div>
+  </section>
+
+  <section class="titleband" id="about">
+    <img src="img/full/theremin-hand-play.jpg" alt="Hand near a copper theremin antenna while a frequency counter reads behind it" loading="lazy" style="object-position:55% 45%">
+    <div class="titleband-text">
+      <div class="kicker">Who I am</div>
+      <h2>About</h2>
+      <p>Building things that actually work, and chasing the problems I don&rsquo;t know how to solve yet.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="about-grid">
+      <div class="about-text rise">
+        <p>I'm an electrical engineering student who finds the most satisfaction in building things that actually work. There's something about writing a piece of code, connecting it to hardware, and seeing something physical respond that never gets old.</p>
+        <p>What draws me to engineering is the process of figuring things out. I enjoy problems that push me beyond what I already know, whether that means learning a new technology, debugging something that refuses to work, or approaching a problem from a completely different direction. I don't need to know how to do something before I start. I am curious enough to figure it out.</p>
+        <p>My projects span embedded systems, biomedical devices, signal processing, computer vision, and PCB design. They're different fields, but they're all driven by the same thing: the curiosity to understand how something works, and the determination to build it myself.</p>
+      </div>
+      <div class="about-side rise">
+        <dl>
+          <dt>Hardware</dt><dd>Altium Designer · PCB layout · sensor interfaces · board bring-up</dd>
+          <dt>Firmware</dt><dd>C / C++ · STM32 · ESP32 · FreeRTOS · register-level drivers · Verilog / VHDL</dd>
+          <dt>Tools</dt><dd>Python · OpenCV · Git · Linux · oscilloscope · logic analyzer · power analyzer</dd>
+          <dt>Email</dt><dd><a href="mailto:sashankvinnakota@gmail.com">sashankvinnakota@gmail.com</a></dd>
+          <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/sashank-vinnakota" target="_blank" rel="noopener">sashank-vinnakota</a></dd>
+          <dt>Code</dt><dd><a href="https://github.com/sashankvinnakota-jpg" target="_blank" rel="noopener">sashankvinnakota-jpg</a></dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="titleband" id="work">
+    <img src="img/full/probing-testboard.jpg" alt="A hand holding an oscilloscope probe against a pad on a black test board" loading="lazy" style="object-position:50% 55%">
+    <div class="titleband-text">
+      <div class="kicker">Selected work</div>
+      <h2>Five projects</h2>
+      <p>Each one opens into a working model in the browser. The firmware logic inside most of them is ported from the code I wrote.</p>
+    </div>
+  </section>
+
+  <section class="band alt">
+    <div class="rows" id="work-list"></div>
+  </section>
+
+  <section class="titleband" id="bench">
+    <img src="img/full/scope-fft-lab.jpg" alt="An oscilloscope on a lab bench showing a waveform and its FFT" loading="lazy" style="object-position:50% 48%">
+    <div class="titleband-text">
+      <div class="kicker">Photographs</div>
+      <h2>From the bench</h2>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="sheet" id="sheet"></div>
+  </section>
+
+
+
+  <footer class="foot">
+    <span>Sashank Vinnakota</span>
+    <span>Electrical engineering · University of Wisconsin–Madison</span>
+    <span>November 2026</span>
+  </footer>
+
+  <div class="lb" id="lb" aria-hidden="true">
+    <button class="lb-close" id="lb-close" aria-label="Close">✕</button>
+    <button class="lb-arrow prev" id="lb-prev" aria-label="Previous photo">←</button>
+    <button class="lb-arrow next" id="lb-next" aria-label="Next photo">→</button>
+    <div class="lb-stage" id="lb-stage"><img id="lb-img" alt=""><video id="lb-vid" hidden muted loop playsinline controls></video></div>
+    <div class="lb-bar"><span id="lb-n"></span><span id="lb-cap"></span></div>
+  </div>
+
+</div>
+
+<div class="paper" id="lab-wrap"><div class="content">
+  <header class="top solid">
+    <a class="mark" href="#" id="nav-home"><span>SV</span>Sashank Vinnakota</a>
+    <nav>
+      <a href="#about" data-to="about">About</a>
+      <a href="#work" data-to="work">Work</a>
+      <a href="#bench" data-to="bench">Bench</a>
+      <a href="https://github.com/sashankvinnakota-jpg" target="_blank" rel="noopener">GitHub&nbsp;↗</a>
+    </nav>
+  </header>
+  <main id="lab">
+    <div class="crumbs"><button class="back-link" id="lab-back">←&nbsp;&nbsp;ALL PROJECTS</button><a id="lab-src" class="src" target="_blank" rel="noopener">SOURCE ON GITHUB ↗</a></div>
+    <div class="lab-heading"><div><div class="eyebrow"><i class="dash"></i><span id="lab-eyebrow"></span></div><h1 id="lab-name"></h1><span id="lab-status"></span><p id="lab-desc"></p></div></div>
+    <div id="lab-root"></div>
+    <section class="writeup" id="lab-story"></section>
+    <div class="notice" id="lab-notice"></div>
+  </main>
+</div></div>
+
+<script src="lib/three.min.js"></script>
+<script src="lib/OrbitControls.js"></script>
+<script src="js/common.js"></script>
+<script src="js/studio.js"></script>
+<script src="js/hub-core.js"></script>
+<script src="js/hub-lab.js"></script>
+<script src="js/pace-dsp.js"></script>
+<script src="js/lab-pace.js"></script>
+<script src="js/lab-wearable.js"></script>
+<script src="js/lab-camera.js"></script>
+<script src="js/lab-cipher.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
